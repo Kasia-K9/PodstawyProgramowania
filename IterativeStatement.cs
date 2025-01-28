@@ -11,15 +11,47 @@ public class IterativeStatement
         {
             Console.WriteLine("Enter a number");
             int number;
-            while (!int.TryParse(Console.ReadLine(), out  number))
+            while (!int.TryParse(Console.ReadLine(), out number))
             {
                 Console.WriteLine("Enter the correct number");
             }
+
             sum += number;
             counter++;
         }
 
         Console.WriteLine($"The sum of numbers is: {sum} ");
         Console.WriteLine($"Entered {counter} numbers");
+    }
+
+    public void CalculateNumbersToReachSum()
+    {
+        int i = 100;
+        int count = 0;
+        int s = 0;
+        while (s < i)
+        {
+            count++;
+            s += count;
+        }
+
+        Console.WriteLine("You need to provide {0} numbers to reach the result {1}", count, i);
+    }
+    public void CalculatePiUsingLeibnizFormula()
+    {
+        int infinity = 100;
+        double pi = 0.0;
+        for (int g = 0; g < infinity; g++)
+        {
+            if (g % 2 == 0)
+            {
+                pi += 4.0 / (2 * g + 1);
+            }
+            else
+            {
+                pi -= 4.0 / (2 * g + 1);
+            }
+        }
+        Console.WriteLine("From the given Leibniz formula, assuming the number 100 as infinity, the value of pi is: " + pi);
     }
 }
