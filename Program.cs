@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        initializeMenu();
+        InitializeMenu();
     }
 
     private static void ShowMenu()
@@ -12,10 +12,11 @@ class Program
         Console.WriteLine("1.ReachSumOfNumbers ");
         Console.WriteLine("2. CalculateNumbersToReachSum");
         Console.WriteLine("3.CalculatePiUsingLeibnizFormula");
-        Console.WriteLine("4. Exit");
+        Console.WriteLine("4.CalculationOfInterest");
+        Console.WriteLine("5. Exit");
     }
 
-    private static void initializeMenu()
+    private static void InitializeMenu()
     {
         IterativeStatement interactiveStatement = new IterativeStatement();
         bool exit = false;
@@ -38,6 +39,10 @@ class Program
                     interactiveStatement.CalculatePiUsingLeibnizFormula();
                     break;
                 case "4":
+                    Console.WriteLine("CalculationOfInterest starting...");
+                    interactiveStatement.CalculationOfInterest();
+                    break;
+                case "5":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;
