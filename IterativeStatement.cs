@@ -70,4 +70,21 @@ public class IterativeStatement
         interest = totalAmoun - principalAmount;
         Console.WriteLine("The interest is: {0}",  interest);
     }
+
+    public void CalculatePowerOfNumber()
+    {
+        Console.WriteLine("Enter the base number for the power: ");
+        int baseNumber  = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the exponent for the power:");
+        int exponent = int.Parse(Console.ReadLine());
+        int result = 1;
+        int counter = 0;
+        while (counter < exponent)
+        {
+            result *= baseNumber ;
+            counter++;
+        }
+
+        Console.WriteLine(result);
+    }
 }
