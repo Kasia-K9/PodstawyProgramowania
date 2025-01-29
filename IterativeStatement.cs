@@ -54,4 +54,20 @@ public class IterativeStatement
         }
         Console.WriteLine("From the given Leibniz formula, assuming the number 100 as infinity, the value of pi is: " + pi);
     }
+
+    public void CalculationOfInterest()
+    {
+        double principalAmount = 10000.0;
+        double totalAmoun = 10000.0;
+        int numberOfMonths = 12;
+        double annualInterestRate = 0.05;
+        double  interest = 0;
+        for (int index = 0; index < numberOfMonths; index++)
+        {
+            totalAmoun += totalAmoun * (annualInterestRate / numberOfMonths);
+        }
+
+        interest = totalAmoun - principalAmount;
+        Console.WriteLine("The interest is: {0}",  interest);
+    }
 }
