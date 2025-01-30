@@ -16,7 +16,8 @@ class Program
         Console.WriteLine("5.CalculatePowerOfNumber");
         Console.WriteLine("6.ProcessNumbers");
         Console.WriteLine("7. CalculateWaysToWithdrawTenZloty ");
-        Console.WriteLine("8. Exit");
+        Console.WriteLine("8. FindTwinPrimesInRange");
+        Console.WriteLine("9. Exit");
     }
 
     private static void InitializeMenu()
@@ -58,6 +59,10 @@ class Program
                     interactiveStatement.CalculateWaysToWithdrawTenZloty();
                     break;
                 case "8":
+                    Console.WriteLine("FindTwinPrimesInRange starting...");
+                    interactiveStatement.FindTwinPrimesInRange();
+                    break;
+                case "9":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;

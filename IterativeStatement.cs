@@ -128,4 +128,39 @@ public class IterativeStatement
             }
         }
     }
-}
+    public void FindTwinPrimesInRange()
+   {
+            Console.WriteLine("Twin primes in the range <1; 100>:");
+            for (int p = 2; p <= 98; p++)
+            {
+                bool isFirstTwinPrime = true;
+                bool isSecondTwinPrime = true;
+                for (int q = 2; q <= Math.Sqrt(p); q++)
+                {
+                    if (p % q == 0)
+                    {
+                        isFirstTwinPrime = false;
+                        break;
+                    }
+                }
+
+                if (isFirstTwinPrime)
+                {
+                    int twinPrime2 = p + 2;
+                    for (int w = 2; w <= Math.Sqrt(twinPrime2); w++)
+                    {
+                        if (twinPrime2 % w == 0)
+                        {
+                            isSecondTwinPrime = false;
+                            break;
+                        }
+                    }
+
+                    if (isSecondTwinPrime)
+                    {
+                        Console.WriteLine("The twin primes are: {0}, {1}", p, twinPrime2);
+                    }
+                }
+            }
+        }
+    }
