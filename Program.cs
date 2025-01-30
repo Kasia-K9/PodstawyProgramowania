@@ -13,7 +13,8 @@ class Program
         Console.WriteLine("2. CalculateNumbersToReachSum");
         Console.WriteLine("3.CalculatePiUsingLeibnizFormula");
         Console.WriteLine("4.CalculationOfInterest");
-        Console.WriteLine("5. Exit");
+        Console.WriteLine("5.CalculatePowerOfNumber");
+        Console.WriteLine("6. Exit");
     }
 
     private static void InitializeMenu()
@@ -43,6 +44,10 @@ class Program
                     interactiveStatement.CalculationOfInterest();
                     break;
                 case "5":
+                    Console.WriteLine("CalculatePowerOfNumber starting...");
+                    interactiveStatement.CalculatePowerOfNumber();
+                    break;
+                case "6":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;
