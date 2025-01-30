@@ -87,4 +87,28 @@ public class IterativeStatement
 
         Console.WriteLine(result);
     }
+    public void ProcessNumbers()
+    {
+        double x;
+        do
+        {
+            Console.WriteLine("Enter any number:");
+            x = double.Parse(Console.ReadLine());
+        } while (Math.Abs(x) <= 2 || Math.Abs(x) >= 3);
+
+        Console.WriteLine("The number {0} meets the condition 2<|x|<3", x);
+
+        Console.WriteLine("Enter a number to find its divisors:");
+        int y = int.Parse(Console.ReadLine());
+        int z = y;
+        do
+        {
+            if (y % z == 0)
+            {
+                Console.WriteLine("The number {0} is a divisor of {1}", z, y);
+            }
+
+            z--;
+        } while (z > 0);
+    }
 }

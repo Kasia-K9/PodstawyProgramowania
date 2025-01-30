@@ -14,7 +14,8 @@ class Program
         Console.WriteLine("3.CalculatePiUsingLeibnizFormula");
         Console.WriteLine("4.CalculationOfInterest");
         Console.WriteLine("5.CalculatePowerOfNumber");
-        Console.WriteLine("6. Exit");
+        Console.WriteLine("6.ProcessNumbers");
+        Console.WriteLine("7. Exit");
     }
 
     private static void InitializeMenu()
@@ -48,6 +49,10 @@ class Program
                     interactiveStatement.CalculatePowerOfNumber();
                     break;
                 case "6":
+                    Console.WriteLine("ProcessNumbers starting...");
+                    interactiveStatement.ProcessNumbers();
+                    break;
+                case "7":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;
