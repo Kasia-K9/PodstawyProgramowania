@@ -15,7 +15,8 @@ class Program
         Console.WriteLine("4.CalculationOfInterest");
         Console.WriteLine("5.CalculatePowerOfNumber");
         Console.WriteLine("6.ProcessNumbers");
-        Console.WriteLine("7. Exit");
+        Console.WriteLine("7. CalculateWaysToWithdrawTenZloty ");
+        Console.WriteLine("8. Exit");
     }
 
     private static void InitializeMenu()
@@ -53,6 +54,10 @@ class Program
                     interactiveStatement.ProcessNumbers();
                     break;
                 case "7":
+                    Console.WriteLine("CalculateWaysToWithdrawTenZloty starting...");
+                    interactiveStatement.CalculateWaysToWithdrawTenZloty();
+                    break;
+                case "8":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;

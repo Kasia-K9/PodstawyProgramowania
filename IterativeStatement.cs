@@ -111,4 +111,21 @@ public class IterativeStatement
             z--;
         } while (z > 0);
     }
+    public void CalculateWaysToWithdrawTenZloty()
+    {
+        Console.WriteLine("Possible ways to withdraw 10 zloty in coins of denominations 1 zloty, 2 zloty, and 5 zloty:");
+        for (int m5 = 0; m5 <= 2; m5++)
+        {
+            for (int m2 = 0; m2 <= 5; m2++)
+            {
+                for (int m1 = 0; m1 <= 10; m1++)
+                {
+                    if (m5 * 5 + m2 * 2 + m1 == 10)
+                    {
+                        Console.WriteLine("Way to withdraw 10 zloty in coins: {0} x 5 zloty + {1} x 2 zloty + {2} x 1 zloty", m5, m2, m1);
+                    }
+                }
+            }
+        }
+    }
 }
