@@ -17,7 +17,8 @@ class Program
         Console.WriteLine("6.ProcessNumbers");
         Console.WriteLine("7. CalculateWaysToWithdrawTenZloty ");
         Console.WriteLine("8. FindTwinPrimesInRange");
-        Console.WriteLine("9. Exit");
+        Console.WriteLine("9. DrawPatternWithSquaresAndDiagonals");
+        Console.WriteLine("10. Exit");
     }
 
     private static void InitializeMenu()
@@ -63,6 +64,10 @@ class Program
                     interactiveStatement.FindTwinPrimesInRange();
                     break;
                 case "9":
+                    Console.WriteLine("DrawPatternWithSquaresAndDiagonals starting...");
+                    interactiveStatement.DrawPatternWithSquaresAndDiagonals();
+                    break;
+                case "10":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;
