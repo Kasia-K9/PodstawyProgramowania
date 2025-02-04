@@ -18,7 +18,8 @@ class Program
         Console.WriteLine("7. CalculateWaysToWithdrawTenZloty ");
         Console.WriteLine("8. FindTwinPrimesInRange");
         Console.WriteLine("9. DrawPatternWithSquaresAndDiagonals");
-        Console.WriteLine("10. Exit");
+        Console.WriteLine("10. FindPerfectNumbersInRange");
+        Console.WriteLine("11. Exit");
     }
 
     private static void InitializeMenu()
@@ -68,6 +69,10 @@ class Program
                     interactiveStatement.DrawPatternWithSquaresAndDiagonals();
                     break;
                 case "10":
+                    Console.WriteLine("FindPerfectNumbersInRange starting...");
+                    interactiveStatement.FindPerfectNumbersInRange();
+                    break;
+                case "11":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;
