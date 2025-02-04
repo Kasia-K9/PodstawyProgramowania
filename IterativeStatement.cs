@@ -37,7 +37,6 @@ public class IterativeStatement
 
         Console.WriteLine("You need to provide {0} numbers to reach the result {1}", count, i);
     }
-
     public void CalculatePiUsingLeibnizFormula()
     {
         int infinity = 100;
@@ -198,6 +197,26 @@ public class IterativeStatement
             }
 
             Console.WriteLine();
+        }
+    }
+    public void FindPerfectNumbersInRange()
+    {
+        Console.WriteLine("Perfect numbers in the range <1; 10000> are:");
+        for (int l1 = 1; l1 <= 10000; l1++)
+        {
+            int  numberOfDivisors = 0;
+            for (int d1 = 1; d1 <= l1 / 2; d1++)
+            {
+                if (l1 % d1 == 0)
+                {
+                    numberOfDivisors += d1;
+                }
+            }
+
+            if ( numberOfDivisors == l1)
+            {
+                Console.WriteLine(l1);
+            }
         }
     }
 }
