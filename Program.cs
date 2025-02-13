@@ -47,6 +47,10 @@ class Program
                     InitializeInteractiveStatementMenu();
                     break;
                 case "2":
+                    Console.WriteLine("Conditional instructions starting...");
+                    InitializeConditionalInstructions();
+                    break;
+                case "3":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;
@@ -114,6 +118,20 @@ class Program
                 default:
                     Console.WriteLine("Invalid option");
                     break;
+            }
+        }
+    }
+
+    private static void InitializeConditionalInstructions()
+    {
+        ConditionalInstructions conditionalInstructions = new ConditionalInstructions();
+        bool exit = false;
+        while (!exit)
+        {
+            ShowConditionalInstructionsMenu();
+            string option = Console.ReadLine();
+            switch (option)
+            {
             }
         }
     }
