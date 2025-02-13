@@ -1,5 +1,7 @@
 namespace PodstawyProgramowania;
 
+public class InitializeMenu
+{ }
 public class IterativeStatement
 {
     public void ReachSumOfNumbers()
@@ -220,3 +222,4 @@ public class IterativeStatement
         }
     }
 }
+

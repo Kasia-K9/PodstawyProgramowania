@@ -7,6 +7,13 @@ class Program
         InitializeMenu();
     }
 
+    private static void ShowMainMenu()
+    {
+        Console.WriteLine("1. Interactive statement");
+        Console.WriteLine("2. Conditional instructions");
+        Console.WriteLine("3. Exit");
+    }
+
     private static void ShowMenu()
     {
         Console.WriteLine("1.ReachSumOfNumbers ");
@@ -22,7 +29,35 @@ class Program
         Console.WriteLine("11. Exit");
     }
 
+    private static void ShowConditionalInstructionsMenu()
+    {
+    }
+
     private static void InitializeMenu()
+    {
+        bool exit = false;
+        while (!exit)
+        {
+            ShowMainMenu();
+            string option = Console.ReadLine();
+            switch (option)
+            {
+                case "1":
+                    Console.WriteLine("Interactive statement starting...");
+                    InitializeInteractiveStatementMenu();
+                    break;
+                case "2":
+                    Console.WriteLine("Exiting");
+                    exit = true;
+                    break;
+                default:
+                    Console.WriteLine("Invalid option");
+                    break;
+            }
+        }
+    }
+
+    private static void InitializeInteractiveStatementMenu()
     {
         IterativeStatement interactiveStatement = new IterativeStatement();
         bool exit = false;
