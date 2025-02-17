@@ -31,6 +31,8 @@ class Program
 
     private static void ShowConditionalInstructionsMenu()
     {
+        Console.WriteLine("0. Exit");
+        Console.WriteLine("1. FindLargestNumber");
     }
 
     private static void InitializeMenu()
@@ -132,6 +134,14 @@ class Program
             string option = Console.ReadLine();
             switch (option)
             {
+                case "0" :
+                    Console.WriteLine("Exiting");
+                    exit = true;
+                    break;
+                case "1":
+                    Console.WriteLine("FindLargestNumber starting...");
+                    conditionalInstructions.FindLargestNumber();
+                    break;
             }
         }
     }
