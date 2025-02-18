@@ -66,4 +66,23 @@ public class ConditionalInstructions
         }
         Console.ReadKey();
     }
+    public void ComparePowerResults()
+    {
+        double base1 = Math.Sqrt(2);
+        double exponent1 = Math.Sqrt(3);
+        double result1 = Math.Pow(base1, exponent1);
+
+        double base2 = Math.Sqrt(3);
+        double exponent2 = Math.Sqrt(2);
+        double result2 = Math.Pow(base2, exponent2);
+
+        if (result1 > result2)
+        {
+            Console.WriteLine($"The number {result1} is greater than {result2}");
+        }
+        else
+        {
+            Console.WriteLine($"The number {result2} is greater than {result1}");
+        }
+    }
 }
