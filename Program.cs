@@ -34,6 +34,7 @@ class Program
         Console.WriteLine("0. Exit");
         Console.WriteLine("1. FindLargestNumber");
         Console.WriteLine("2. SolveQuadraticEquation");
+        Console.WriteLine("2. ComparePowerResults");
     }
 
     private static void InitializeMenu()
@@ -146,6 +147,10 @@ class Program
                 case "2":
                     Console.WriteLine("SolveQuadraticEquation starting...");
                     conditionalInstructions.SolveQuadraticEquation();
+                    break;
+                case "3":
+                    Console.WriteLine("ComparePowerResults");
+                    conditionalInstructions.ComparePowerResults();
                     break;
                 default:
                     Console.WriteLine("Invalid option");
