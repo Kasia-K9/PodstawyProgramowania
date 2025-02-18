@@ -85,4 +85,24 @@ public class ConditionalInstructions
             Console.WriteLine($"The number {result2} is greater than {result1}");
         }
     }
+    public void CheckLeapYear()
+    {
+        Console.WriteLine("Enter a year to check if it is a leap year:");
+        if (int.TryParse(Console.ReadLine(), out int year))
+        {
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            {
+                Console.WriteLine("The year is a leap year.");
+            }
+            else
+            {
+                Console.WriteLine("The year is not a leap year.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a valid year.");
+        }
+        Console.ReadKey();
+    }
 }

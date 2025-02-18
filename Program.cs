@@ -34,7 +34,8 @@ class Program
         Console.WriteLine("0. Exit");
         Console.WriteLine("1. FindLargestNumber");
         Console.WriteLine("2. SolveQuadraticEquation");
-        Console.WriteLine("2. ComparePowerResults");
+        Console.WriteLine("3. ComparePowerResults");
+        Console.WriteLine("4. CheckLeapYear");
     }
 
     private static void InitializeMenu()
@@ -151,6 +152,10 @@ class Program
                 case "3":
                     Console.WriteLine("ComparePowerResults");
                     conditionalInstructions.ComparePowerResults();
+                    break;
+                case "4":
+                    Console.WriteLine("CheckLeapYear");
+                    conditionalInstructions.CheckLeapYear();
                     break;
                 default:
                     Console.WriteLine("Invalid option");
