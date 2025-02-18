@@ -33,6 +33,7 @@ class Program
     {
         Console.WriteLine("0. Exit");
         Console.WriteLine("1. FindLargestNumber");
+        Console.WriteLine("2. SolveQuadraticEquation");
     }
 
     private static void InitializeMenu()
@@ -141,6 +142,13 @@ class Program
                 case "1":
                     Console.WriteLine("FindLargestNumber starting...");
                     conditionalInstructions.FindLargestNumber();
+                    break;
+                case "2":
+                    Console.WriteLine("SolveQuadraticEquation starting...");
+                    conditionalInstructions.SolveQuadraticEquation();
+                    break;
+                default:
+                    Console.WriteLine("Invalid option");
                     break;
             }
         }
