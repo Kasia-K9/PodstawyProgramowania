@@ -38,6 +38,7 @@ class Program
         Console.WriteLine("4. CheckLeapYear");
         Console.WriteLine("5. DetermineMiddleValue");
         Console.WriteLine("6. FindAndSortThreeNumbers");
+        Console.WriteLine("7. PerformArithmeticOperation");
     }
 
     private static void InitializeMenu()
@@ -166,6 +167,10 @@ class Program
                 case "6":
                     Console.WriteLine("FindAndSortThreeNumbers");
                     conditionalInstructions.FindAndSortThreeNumbers();
+                    break;
+                case "7":
+                    Console.WriteLine("PerformArithmeticOperation");
+                    conditionalInstructions.PerformArithmeticOperation();
                     break;
                 default:
                     Console.WriteLine("Invalid option");
