@@ -36,6 +36,7 @@ class Program
         Console.WriteLine("2. SolveQuadraticEquation");
         Console.WriteLine("3. ComparePowerResults");
         Console.WriteLine("4. CheckLeapYear");
+        Console.WriteLine("5. DetermineMiddleValue");
     }
 
     private static void InitializeMenu()
@@ -156,6 +157,10 @@ class Program
                 case "4":
                     Console.WriteLine("CheckLeapYear");
                     conditionalInstructions.CheckLeapYear();
+                    break;
+                case "5":
+                    Console.WriteLine("DetermineMiddleValue");
+                    conditionalInstructions.DetermineMiddleValue();
                     break;
                 default:
                     Console.WriteLine("Invalid option");
