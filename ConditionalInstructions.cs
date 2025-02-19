@@ -220,4 +220,39 @@ public class ConditionalInstructions
 
         Console.WriteLine("Smallest number: {0}, Middle number: {1}, Largest number: {2}", smallestNum, middleNum, largestNum);
     }  
+    public void PerformArithmeticOperation()
+    {
+        int numberA, numberB;
+        char expression;
+
+        Console.WriteLine("Enter the first positive number:");
+        numberA = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the second positive number:");
+        numberB = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter an arithmetic expression: +, -, *, /");
+        expression = char.Parse(Console.ReadLine());
+
+        switch (expression)
+        {
+            case '+':
+                Console.WriteLine(numberA + numberB);
+                break;
+            case '-':
+                Console.WriteLine(numberA - numberB);
+                break;
+            case '*':
+                Console.WriteLine(numberA * numberB);
+                break;
+            case '/':
+                Console.WriteLine(numberA / numberB);
+                break;
+            default:
+                Console.WriteLine("Unknown arithmetic operation");
+                break;
+        }
+
+        Console.ReadKey();
+    }
 }
