@@ -105,4 +105,45 @@ public class ConditionalInstructions
         }
         Console.ReadKey();
     }
+    public void DetermineMiddleValue()
+    {
+        int numberA, numberB, numberC;
+
+        Console.WriteLine("Enter any number:");
+        while (!int.TryParse(Console.ReadLine(), out numberA))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number:");
+        }
+
+        Console.WriteLine("Enter any number:");
+        while (!int.TryParse(Console.ReadLine(), out numberB))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number:");
+        }
+
+        Console.WriteLine("Enter any number:");
+        while (!int.TryParse(Console.ReadLine(), out numberC))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number:");
+        }
+
+        if ((numberA > numberB && numberA < numberC) || (numberA < numberB && numberA > numberC))
+        {
+            Console.WriteLine("The middle value is: {0}", numberA);
+        }
+        else if ((numberB > numberA && numberB < numberC) || (numberB < numberA && numberB > numberC))
+        {
+            Console.WriteLine("The middle value is: {0}", numberB);
+        }
+        else if ((numberC > numberA && numberC < numberB) || (numberC < numberA && numberC > numberB))
+        {
+            Console.WriteLine("The middle value is: {0}", numberC);
+        }
+        else if (numberA == numberB && numberA == numberC)
+        {
+            Console.WriteLine("All entered numbers are the same.");
+        }
+
+        Console.ReadKey();
+    }
 }
