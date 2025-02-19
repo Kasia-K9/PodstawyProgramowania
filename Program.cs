@@ -39,6 +39,7 @@ class Program
         Console.WriteLine("5. DetermineMiddleValue");
         Console.WriteLine("6. FindAndSortThreeNumbers");
         Console.WriteLine("7. PerformArithmeticOperation");
+        Console.WriteLine("8. CheckDivisibilityByThree");
     }
 
     private static void InitializeMenu()
@@ -171,6 +172,10 @@ class Program
                 case "7":
                     Console.WriteLine("PerformArithmeticOperation");
                     conditionalInstructions.PerformArithmeticOperation();
+                    break;
+                case "8":
+                    Console.WriteLine("CheckDivisibilityByThree");
+                    conditionalInstructions.CheckDivisibilityByThree();
                     break;
                 default:
                     Console.WriteLine("Invalid option");
