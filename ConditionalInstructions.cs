@@ -27,6 +27,7 @@ public class ConditionalInstructions
             Console.ReadKey();
         }
     }
+
     public void SolveQuadraticEquation()
     {
         double a, b, c;
@@ -64,8 +65,10 @@ public class ConditionalInstructions
         {
             Console.WriteLine("Delta is less than zero, the equation has no real solutions");
         }
+
         Console.ReadKey();
     }
+
     public void ComparePowerResults()
     {
         double base1 = Math.Sqrt(2);
@@ -85,6 +88,7 @@ public class ConditionalInstructions
             Console.WriteLine($"The number {result2} is greater than {result1}");
         }
     }
+
     public void CheckLeapYear()
     {
         Console.WriteLine("Enter a year to check if it is a leap year:");
@@ -103,8 +107,10 @@ public class ConditionalInstructions
         {
             Console.WriteLine("Invalid input. Please enter a valid year.");
         }
+
         Console.ReadKey();
     }
+
     public void DetermineMiddleValue()
     {
         int numberA, numberB, numberC;
@@ -146,4 +152,72 @@ public class ConditionalInstructions
 
         Console.ReadKey();
     }
+    public void FindAndSortThreeNumbers()
+    {
+        int firstNum, secondNum, thirdNum;
+        int smallestNum, middleNum, largestNum;
+
+        Console.WriteLine("Enter the first number:");
+        while (!int.TryParse(Console.ReadLine(), out firstNum))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number:");
+        }
+
+        Console.WriteLine("Enter the second number:");
+        while (!int.TryParse(Console.ReadLine(), out secondNum))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number:");
+        }
+
+        Console.WriteLine("Enter the third number:");
+        while (!int.TryParse(Console.ReadLine(), out thirdNum))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number:");
+        }
+
+        if (firstNum <= secondNum && firstNum <= thirdNum)
+        {
+            smallestNum = firstNum;
+            if (secondNum <= thirdNum)
+            {
+                middleNum = secondNum;
+                largestNum = thirdNum;
+            }
+            else
+            {
+                middleNum = thirdNum;
+                largestNum = secondNum;
+            }
+        }
+        else if (secondNum <= firstNum && secondNum <= thirdNum)
+        {
+            smallestNum = secondNum;
+            if (firstNum <= thirdNum)
+            {
+                middleNum = firstNum;
+                largestNum = thirdNum;
+            }
+            else
+            {
+                middleNum = thirdNum;
+                largestNum = firstNum;
+            }
+        }
+        else
+        {
+            smallestNum = thirdNum;
+            if (firstNum <= secondNum)
+            {
+                middleNum = firstNum;
+                largestNum = secondNum;
+            }
+            else
+            {
+                middleNum = secondNum;
+                largestNum = firstNum;
+            }
+        }
+
+        Console.WriteLine("Smallest number: {0}, Middle number: {1}, Largest number: {2}", smallestNum, middleNum, largestNum);
+    }  
 }
