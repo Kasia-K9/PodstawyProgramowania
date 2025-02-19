@@ -255,4 +255,31 @@ public class ConditionalInstructions
 
         Console.ReadKey();
     }
+    public void CheckDivisibilityByThree()
+    {
+        int number;
+        Console.WriteLine("Enter a number in the range 1-999:");
+        number = int.Parse(Console.ReadLine());
+
+        if (number < 1 || number > 999)
+        {
+            Console.WriteLine("The number is not within the range 1-999.");
+            return;
+        }
+
+        int firstStep = number / 100;
+        int secondStep = (number / 10) % 10;
+        int thirdStep = number % 10;
+
+        int sumOfNumbers = firstStep + secondStep + thirdStep;
+
+        if (sumOfNumbers % 3 == 0)
+        {
+            Console.WriteLine("The number " + number + " is divisible by 3.");
+        }
+        else
+        {
+            Console.WriteLine("The number " + number + " is not divisible by 3.");
+        }
+    }
 }
