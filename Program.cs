@@ -11,7 +11,8 @@ class Program
     {
         Console.WriteLine("1. Interactive statement");
         Console.WriteLine("2. Conditional instructions");
-        Console.WriteLine("3. Exit");
+        Console.WriteLine("3. Arrays Operations");
+        Console.WriteLine("4. Exit");
     }
 
     private static void ShowMenu()
@@ -41,6 +42,13 @@ class Program
         Console.WriteLine("7. PerformArithmeticOperation");
         Console.WriteLine("8. CheckDivisibilityByThree");
     }
+    private static void ShowArraysOperationsMenu()
+    {
+        Console.WriteLine("0. Exit");
+        Console.WriteLine("1. ");
+        Console.WriteLine("2. ");
+        Console.WriteLine("3. ");
+    }
 
     private static void InitializeMenu()
     {
@@ -60,6 +68,10 @@ class Program
                     InitializeConditionalInstructions();
                     break;
                 case "3":
+                    Console.WriteLine("Arrays Operations starting...");
+                    InitializeArraysOperations();
+                    break;
+                case "4":
                     Console.WriteLine("Exiting");
                     exit = true;
                     break;
@@ -176,6 +188,35 @@ class Program
                 case "8":
                     Console.WriteLine("CheckDivisibilityByThree");
                     conditionalInstructions.CheckDivisibilityByThree();
+                    break;
+                default:
+                    Console.WriteLine("Invalid option");
+                    break;
+            }
+        }
+    }
+    private static void InitializeArraysOperations()
+    {
+        ArraysOperations arraysOperations = new ArraysOperations();
+        bool exit = false;
+        while (!exit)
+        {
+            ShowArraysOperationsMenu();
+            string option = Console.ReadLine();
+            switch (option)
+            {
+                case "0":
+                    Console.WriteLine("Exiting");
+                    exit = true;
+                    break;
+                case "1":
+                    Console.WriteLine(" ");
+                    break;
+                case "2":
+                    Console.WriteLine(" ");
+                    break;
+                case "3":
+                    Console.WriteLine(" ");
                     break;
                 default:
                     Console.WriteLine("Invalid option");
