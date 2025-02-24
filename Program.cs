@@ -45,7 +45,7 @@ class Program
     private static void ShowArraysOperationsMenu()
     {
         Console.WriteLine("0. Exit");
-        Console.WriteLine("1. ");
+        Console.WriteLine("1.ReadAndDisplayArrayElements");
         Console.WriteLine("2. ");
         Console.WriteLine("3. ");
     }
@@ -166,27 +166,27 @@ class Program
                     conditionalInstructions.SolveQuadraticEquation();
                     break;
                 case "3":
-                    Console.WriteLine("ComparePowerResults");
+                    Console.WriteLine("ComparePowerResults starting...");
                     conditionalInstructions.ComparePowerResults();
                     break;
                 case "4":
-                    Console.WriteLine("CheckLeapYear");
+                    Console.WriteLine("CheckLeapYear starting...");
                     conditionalInstructions.CheckLeapYear();
                     break;
                 case "5":
-                    Console.WriteLine("DetermineMiddleValue");
+                    Console.WriteLine("DetermineMiddleValue starting...");
                     conditionalInstructions.DetermineMiddleValue();
                     break;  
                 case "6":
-                    Console.WriteLine("FindAndSortThreeNumbers");
+                    Console.WriteLine("FindAndSortThreeNumbers starting...");
                     conditionalInstructions.FindAndSortThreeNumbers();
                     break;
                 case "7":
-                    Console.WriteLine("PerformArithmeticOperation");
+                    Console.WriteLine("PerformArithmeticOperation starting...");
                     conditionalInstructions.PerformArithmeticOperation();
                     break;
                 case "8":
-                    Console.WriteLine("CheckDivisibilityByThree");
+                    Console.WriteLine("CheckDivisibilityByThree starting...");
                     conditionalInstructions.CheckDivisibilityByThree();
                     break;
                 default:
@@ -210,7 +210,8 @@ class Program
                     exit = true;
                     break;
                 case "1":
-                    Console.WriteLine(" ");
+                    Console.WriteLine("ReadAndDisplayArrayElements starting...");
+                    arraysOperations.ReadAndDisplayArrayElements();
                     break;
                 case "2":
                     Console.WriteLine(" ");
