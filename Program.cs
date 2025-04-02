@@ -47,7 +47,9 @@ class Program
         Console.WriteLine("0. Exit");
         Console.WriteLine("1.ReadAndDisplayArrayElements");
         Console.WriteLine("2.CalculateSumAndAverage");
-        Console.WriteLine("3. ");
+        Console.WriteLine("3.SortArrayAndFindSmallestElement");
+        Console.WriteLine("4.");
+        Console.WriteLine("5.");
     }
 
     private static void InitializeMenu()
@@ -218,7 +220,8 @@ class Program
                     arraysOperations.CalculateSumAndAverage();
                     break;
                 case "3":
-                    Console.WriteLine(" ");
+                    Console.WriteLine("SortArrayAndFindSmallestElement starting... ");
+                    arraysOperations.SortArrayAndFindSmallestElement();
                     break;
                 default:
                     Console.WriteLine("Invalid option");

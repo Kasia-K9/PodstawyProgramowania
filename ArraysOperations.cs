@@ -43,4 +43,25 @@ public class ArraysOperations
         Console.WriteLine("The sum of the array elements is: {0}", sum);
         Console.WriteLine("The average of the array elements is: {0}", average);
     }
+
+    public void SortArrayAndFindSmallestElement()
+    {
+        byte temp = 0;
+        byte[] arr2 = { 32, 16, 128, 64 };
+        for (int k = 0; k < arr2.Length - 1; k++)
+        {
+            for (int l = 0; l < arr2.Length - k - 1; l++)
+            {
+                if (arr2[l] > arr2[l + 1])
+                {
+                    temp = arr2[l];
+                    arr2[l] = arr2[l + 1];
+                    arr2[l + 1] = temp;
+                }
+            }
+        }
+
+        Console.WriteLine("The smallest element in the array is: {0}", arr2[0]);
+        Console.WriteLine("The position of the smallest element is: {0}", Array.IndexOf(arr2, arr2[0]));
+    }
 }
