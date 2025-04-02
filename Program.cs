@@ -46,7 +46,7 @@ class Program
     {
         Console.WriteLine("0. Exit");
         Console.WriteLine("1.ReadAndDisplayArrayElements");
-        Console.WriteLine("2. ");
+        Console.WriteLine("2.CalculateSumAndAverage");
         Console.WriteLine("3. ");
     }
 
@@ -214,7 +214,7 @@ class Program
                     arraysOperations.ReadAndDisplayArrayElements();
                     break;
                 case "2":
-                    Console.WriteLine(" ");
+                    Console.WriteLine("CalculateSumAndAverage starting... ");
                     break;
                 case "3":
                     Console.WriteLine(" ");
