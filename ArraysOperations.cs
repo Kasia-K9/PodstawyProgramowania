@@ -25,5 +25,21 @@ public class ArraysOperations
         {
             Console.WriteLine("An error occurred: {0}", e.Message);
         }
-    }  
+    }
+    static void CalculateSumAndAverage()
+    {
+        int[] arr1 = new int[20];
+        int sum = 0;
+        int average = 0;
+        for (int j = 0; j < 20; j++)
+        {
+            arr1[j] = j + 1;
+            Console.WriteLine(arr1[j]);
+            sum += arr1[j];
+        }
+
+        average = sum / 20;
+        Console.WriteLine("The sum of the array elements is: {0}", sum);
+        Console.WriteLine("The average of the array elements is: {0}", average);
+    }
 }
