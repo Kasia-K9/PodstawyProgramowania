@@ -215,6 +215,7 @@ class Program
                     break;
                 case "2":
                     Console.WriteLine("CalculateSumAndAverage starting... ");
+                    arraysOperations.CalculateSumAndAverage();
                     break;
                 case "3":
                     Console.WriteLine(" ");

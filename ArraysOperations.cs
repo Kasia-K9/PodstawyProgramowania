@@ -26,7 +26,8 @@ public class ArraysOperations
             Console.WriteLine("An error occurred: {0}", e.Message);
         }
     }
-    static void CalculateSumAndAverage()
+
+    public void CalculateSumAndAverage()
     {
         int[] arr1 = new int[20];
         int sum = 0;
